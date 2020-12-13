@@ -1,0 +1,9 @@
+name: Hello, World!
+on: push  # トリガー: リポジトリへのpush時に実行する
+
+jobs:
+  build:
+    name: Greeting
+    runs-on: ubuntu-latest  # 実行環境: ubuntuの最新のコンテナで実行する
+    steps:
+      - run: echo "Hello, World!"  # 実行内容: echoコマンドを実行する（シェル）
